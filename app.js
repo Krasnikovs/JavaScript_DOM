@@ -1,4 +1,6 @@
-const list = document.querySelector('#book-list ul')
+document.addEventListener('DOMContentLoaded', function(){
+
+    const list = document.querySelector('#book-list ul')
 
 //delete
 list.addEventListener('click', function(e){
@@ -76,3 +78,5 @@ tabs.addEventListener('click', function(e){
     })
     }
 })
+})
+
