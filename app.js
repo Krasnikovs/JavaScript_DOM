@@ -9,17 +9,11 @@ list.addEventListener('click', function(e){
 });
 
 //add book
-const addForm = document.forms['add-book'];
+const forms = document.forms;
+const addForm = forms['add-book'];
 
-console.log(forms);
-console.log(forms['add-book']);
-
-Array.from(forms).forEach(function(form){
-    console.log(form);
-  });
-
-addForm.addEventListener('submit', function(e){
+  addForm.addEventListener('submit', function(e){
     e.preventDefault();
     const value = addForm.querySelector('input[type="text"]').value;
     console.log(value);
-});
+  });
